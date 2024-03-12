@@ -1,32 +1,13 @@
-import { useEffect, useState } from "react";
-import firebase from "../firebaseConfig";
-import { getAuth, onAuthStateChanged, signInWithEmailAndPassword } from "firebase/auth";
-import React from "react";
-import HomeScreen from "./HomeScreen";
+import { useState } from "react";
 import Login from "../Components/Login/Login";
 import Register from "../Components/Register/Register";
 
 
-const auth = getAuth(firebase);
 
 const LoginScreen = () => {
 
-  
-    const [user, setUser] = useState<any>(null);
     const [register, setRegister] = useState(false);
 
-    
-    useEffect(() => {
-      onAuthStateChanged(auth, (userFirebase)=>{
-          if(userFirebase){
-              setUser(userFirebase);
-          }
-          else{
-              setUser(null);
-          }
-      });
-      
-    })
     
 
     return (

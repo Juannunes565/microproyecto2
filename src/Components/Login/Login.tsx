@@ -1,14 +1,11 @@
-import React, { useState } from "react";
-import { createUserWithEmailAndPassword, getAuth, signInWithEmailAndPassword } from "firebase/auth";
+
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import firebase from "../../firebaseConfig";
-import {getFirestore, collection, addDoc} from "firebase/firestore";
 import "./Login.css"
 import { useNavigate } from "react-router-dom";
 
 const auth = getAuth(firebase);
 
-const db = getFirestore(firebase);
-const collectionRef = collection(db, "Usuario");
 
 const Login = () => {
 

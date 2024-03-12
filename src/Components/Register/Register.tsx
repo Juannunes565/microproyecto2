@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "./Register.css";
 import firebase from "../../firebaseConfig";
 import {getAuth, createUserWithEmailAndPassword} from "firebase/auth";

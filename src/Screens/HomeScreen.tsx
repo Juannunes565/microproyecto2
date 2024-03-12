@@ -1,15 +1,13 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import firebase from "../firebaseConfig"
-import {getAuth} from "firebase/auth";
 import {getFirestore, collection, getDocs} from "firebase/firestore";
 import MainBar from "../Components/MainBar/MainBar";
 import ClubView from "../Components/ClubView/ClubView";
 import "./HomeScreen.css"
-import { Navigate, useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import GameShow from "../Components/GameShow/GameShow";
 
 
-const auth = getAuth(firebase);
 
 
 const HomeScreen = () => {

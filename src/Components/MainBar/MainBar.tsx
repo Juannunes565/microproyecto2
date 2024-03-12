@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "./MainBar.css"
 import { useNavigate } from "react-router-dom";
-import { User, getAuth, onAuthStateChanged } from "firebase/auth";
+import { getAuth, onAuthStateChanged } from "firebase/auth";
 import firebase from "../../firebaseConfig"
 
 const auth = getAuth(firebase);

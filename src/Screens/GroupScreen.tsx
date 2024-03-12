@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import "./GroupScreen.css"
 import firebase from "../firebaseConfig";
-import { CollectionReference, DocumentData, collection, doc, getDoc, getDocs, getFirestore, query, updateDoc, where } from "firebase/firestore";
+import { collection, doc, getDocs, getFirestore, updateDoc} from "firebase/firestore";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 
 
@@ -10,7 +10,6 @@ import { getAuth, onAuthStateChanged } from "firebase/auth";
 const GroupScreen = () => {
 
     //Estados
-    const [afiliado, setAfiliado] = useState(false);
     const [club, setClub] = useState({ID: "", descripcion: "", nombre: "", videojuegos: []});
     const [user, setUser] = useState<any>({nombre: "", apellido: "", email: "", username: "", membresias: [], videojuego_preferido: ""})
     const [loadingUser, setLoadingUser] = useState<any>(true);
@@ -137,8 +136,7 @@ const GroupScreen = () => {
             user.membresias.push(club);
             setUser(user);
             const documentRef = doc(firestore, "Usuario", userId);
-            await updateDoc(documentRef, user); 
-            setAfiliado(true);  
+            await updateDoc(documentRef, user);             
             alert("Se ha afiliado al grupo exitosamente!");              
         }
     }
@@ -154,8 +152,7 @@ const GroupScreen = () => {
             }
             setUser(user);
             const documentRef = doc(firestore, "Usuario", userId);
-            await updateDoc(documentRef, user);
-            setAfiliado(false);     
+            await updateDoc(documentRef, user);            
             alert("Se ha desafiliado del grupo exitosamente!");                   
         }
     }

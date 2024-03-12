@@ -1,6 +1,5 @@
 import { useNavigate } from "react-router-dom";
 import "./GameShow.css"
-import { useState } from "react";
 
 
 const GameShow = (props: any) => {

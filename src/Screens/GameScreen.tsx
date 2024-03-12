@@ -4,8 +4,6 @@ import firebase from "../firebaseConfig"
 import { useEffect, useState } from "react";
 import {getAuth, onAuthStateChanged} from "firebase/auth";
 
-const auth = getAuth(firebase);
-
 
 const GameScreen = () => {
     const [loadingGame, setLoadingGame] = useState(true);
