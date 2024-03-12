@@ -1,0 +1,35 @@
+.container-Register{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-Register{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 5%;
+}
+
+.subcontainer-Register{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-Register{
+    border: none;
+    background-color: white;
+    text-decoration: underline;
+}
+
+.button-Register:hover{
+    color: blue;
+}
+
+.submitButton-Register{
+    margin-top: 3%;
+}

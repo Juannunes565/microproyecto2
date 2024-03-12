@@ -1,0 +1,28 @@
+.container-MainBar{
+    display: flex;
+    background-color: bisque;
+}
+
+.subcontainer1-MainBar{
+    text-align: center;
+    flex: 2;
+}
+
+.subcontainer2-MainBar{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex: 8;
+    text-align: end;
+    background-color: antiquewhite;
+}
+
+.profileButton-MainBar{
+    margin-right: 2%;
+    border: none;
+    background: none;
+}
+
+.profileButton-MainBar:hover{
+    color: white;
+}

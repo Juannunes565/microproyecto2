@@ -1,0 +1,13 @@
+.container-GameShow{
+    display: flex;
+    flex-direction: column;
+}
+
+.subcontainer-GameShow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    text-align: center;
+    height: 30px;
+}

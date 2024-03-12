@@ -1,0 +1,13 @@
+.gamesContainer-GroupScreen{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+}
+
+.container-GroupScreen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
